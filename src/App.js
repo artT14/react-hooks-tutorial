@@ -12,6 +12,11 @@ import ComponentB from './components/Reducer/ComponentB';
 import ComponentC from './components/Reducer/ComponentC';
 import DataFetchingOne from './components/Reducer/DataFetchingOne';
 import DataFetchingTwo from './components/Reducer/DataFetchingTwo';
+import ParentComponent from './components/Callback/ParentComponent';
+import Counter from './components/Memo/Counter'
+import FocusInput from './components/Ref/FocusInput'
+import ClassTimer from './components/Ref/ClassTimer'
+import HookTimer from './components/Ref/HookTimer'
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -59,7 +64,12 @@ function App() {
         </CountContext.Provider>
       </> */}
       {/* <DataFetchingOne/> */}
-      <DataFetchingTwo/>
+      {/* <DataFetchingTwo/> */}
+      {/* <ParentComponent/> */}
+      {/* <Counter/> */}
+      {/* <FocusInput/> */}
+      <ClassTimer/>
+      <HookTimer/>
     </div>
   );
 }
